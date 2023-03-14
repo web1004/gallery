@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
   let goldidx=0; 
-  let gidx=0;   
+  let gidx=0;  
 
-  function galleryImg(gidx){  
+  function galleryImg(gidx){ 
 
     if(goldidx!=gidx){ 
 
@@ -27,25 +27,20 @@ $(document).ready(function(){
 
   //이전버튼 클릭시.....
   $(".left_btn").click(function(){
-
     gidx--;
     if(gidx<0){  
-		  gidx=9; 
+      gidx=9; 
 		}
     galleryImg(gidx);
-
   });
-
 
   //다음버튼 클릭시.....
-  $(".right_btn").click(function(){
-    
+  $(".right_btn").click(function(){    
     gidx++;
     if(gidx>9){  
-		  gidx=0; 
+      gidx=0; 
 		}
     galleryImg(gidx);
-
   });
 
-}); 
+});

@@ -7,13 +7,14 @@ $(document).ready(function(){
     return false;
   });
 
+
   //방법2......................
- /*  $(".thumbs a").click(function(){
+/*   $(".thumbs a").click(function(){
     let num=$(this).index();
     $("#largeImg>img").attr({"src":"image/bg"+num+".jpg"});
     return false;
-  });
- */
+  }); */
+
 
   //방법1......................
   /* $(".thumbs a").eq(0).click(function(){

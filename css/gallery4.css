@@ -5,6 +5,7 @@
 	height:753px;
 	background:#fff;
 	position:relative;
+	margin: auto;
 }
 .largeImg li{
 	display:none;

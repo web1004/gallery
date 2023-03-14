@@ -14,9 +14,8 @@ $(document).ready(function(){
 		$("#largeImg>img").eq(nimg).stop().fadeIn(1000,function(){  //새이미지 나타남
 			oimg = nimg; //새로 나온 이미지가 다시 기존이미지로 바뀌고 다시 fadeOut...
 		});
-    
     return false;
-
+    
   });
 
-}); 
+});
