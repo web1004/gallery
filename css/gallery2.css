@@ -30,18 +30,12 @@ body {
 	top:25px;
 	left:25px;	
 }
-#largeImg img:first-child{display:inline;}/*첫번째 이미지는 보이게함*/
-.thumbs a {
-	margin-right: 5px;
-}
-.thumbs a.on img{  /* 제이쿼리에서 불러냄 */
-	opacity: 1;
-}
+#largeImg img:first-child{display:inline;} /*첫번째 이미지는 보이게함*/
+.thumbs a {margin-right: 5px;}
+.thumbs a.on img{opacity: 1;} /* 제이쿼리에서 불러냄 */
 .thumbs a img {
 	width: 80px;
 	height: 70px;
 	opacity: 0.6;
 }
-.thumbs a:hover img {
-	opacity: 1;
-}
+.thumbs a:hover img {opacity: 1;}

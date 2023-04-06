@@ -14,30 +14,21 @@ body {
 	background-color: #eee;
 	box-shadow: 0 0 30px rgb(65, 66, 64);
 }
-
 #largeImg {
 	width: 650px;
 	height: 400px;
 	border: solid 1px #ccc;
 	margin-bottom: 20px;
 }
-
 #largeImg img {
 	width: inherit;
 	height: inherit;
 	object-fit: cover;
 }
-
-.thumbs a {
-	margin-right: 5px;
-}
-
+.thumbs a {margin-right: 5px;}
 .thumbs img {
 	width: 80px;
 	height: 70px;
 	opacity: 0.6;
 }
-
-.thumbs img:hover {
-	opacity: 1;
-}
+.thumbs img:hover {opacity: 1;}

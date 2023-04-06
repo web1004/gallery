@@ -16,19 +16,15 @@ body {
 	position: relative;
 	overflow: hidden;
 }
-
 #largeImg {
 	display: flex;
 	position: absolute;
 }
-
 .thumbs {
 	position: absolute;
 	right: 20px;
 	bottom: 20px;
-
 }
-
 .thumbs a {
 	display: inline-block;
 	padding: 5px 10px;
@@ -36,7 +32,6 @@ body {
 	background: #ccc;
 	color: #666;
 }
-
 .thumbs a.on{
 	background: #333;
 	color: #fff;
