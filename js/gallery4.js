@@ -34,6 +34,7 @@ $(document).ready(function(){
     galleryImg(gidx);
   });
 
+
   //다음버튼 클릭시.....
   $(".right_btn").click(function(){    
     gidx++;
@@ -44,3 +45,4 @@ $(document).ready(function(){
   });
 
 });
+

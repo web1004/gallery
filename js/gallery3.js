@@ -7,15 +7,13 @@ $(document).ready(function(){
   $(".thumbs a").click(function(){
 
     sidx=$(this).index();
-    smove=-simg_w*sidx;
-	
-		$("#gallery #largeImg").animate({"left":smove});
-		$(".thumbs a").eq(soldidx).removeClass("on");
+    smove=-(simg_w*sidx);
+
+    $("#gallery #largeImg").animate({"left":smove});
+    $(".thumbs a").eq(soldidx).removeClass("on");
 		$(".thumbs a").eq(sidx).addClass("on");
 		soldidx = sidx;
     return false;
-
   });
-
 
 });

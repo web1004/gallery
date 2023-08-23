@@ -32,6 +32,7 @@ $(document).ready(function(){
   $(".thumbs a").eq(3).click(function(){
     $("#largeImg>img").attr({"src":"image/bg3.jpg"});
     return false;
-  }); */
+  });  */
+
 
 });
