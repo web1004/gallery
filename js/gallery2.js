@@ -1,11 +1,9 @@
 $(document).ready(function(){
 
-  /* old는 처음 있던 이미지, num은 다음에 올 이미지 */
   let oimg=0; 
 	let nimg=0;
 
   $(".thumbs a").click(function(){
-
     nimg=$(this).index();  
     $(".thumbs a").eq(oimg).removeClass("on");  //썸네일클래스 사라짐
 		$(".thumbs a").eq(nimg).addClass("on");  //썸네일 클래스 불러옴

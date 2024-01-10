@@ -11,8 +11,8 @@ $(document).ready(function(){
 
     $("#gallery #largeImg").animate({"left":smove});
     $(".thumbs a").eq(soldidx).removeClass("on");
-		$(".thumbs a").eq(sidx).addClass("on");
-		soldidx = sidx;
+		$(".thumbs a").eq(sidx).addClass("on"); 
+    soldidx = sidx;   
     return false;
   });
 

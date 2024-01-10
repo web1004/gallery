@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  //방법3......................
+  //방법3.................
   $(".thumbs a").click(function(){
     let path=$(this).attr("href");
     $("#largeImg>img").attr({"src":path}).hide().fadeIn();
@@ -8,15 +8,14 @@ $(document).ready(function(){
   });
 
 
-  //방법2......................
-/*   $(".thumbs a").click(function(){
+  //방법2.................
+  /* $(".thumbs a").click(function(){
     let num=$(this).index();
-    $("#largeImg>img").attr({"src":"image/bg"+num+".jpg"});
+    $("#largeImg>img").attr({"src":"image/bg" + num +".jpg"});
     return false;
   }); */
-
-
-  //방법1......................
+  
+  //방법1.................
   /* $(".thumbs a").eq(0).click(function(){
     $("#largeImg>img").attr({"src":"image/bg0.jpg"});
     return false;
@@ -32,7 +31,6 @@ $(document).ready(function(){
   $(".thumbs a").eq(3).click(function(){
     $("#largeImg>img").attr({"src":"image/bg3.jpg"});
     return false;
-  });  */
-
+  }); */
 
 });
