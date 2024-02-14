@@ -1,36 +1,32 @@
 $(document).ready(function(){
 
-  //방법3.................
-  $(".thumbs a").click(function(){
-    let path=$(this).attr("href");
-    $("#largeImg>img").attr({"src":path}).hide().fadeIn();
-    return false;
+  $(".thumbs img").click(function(){
+    // 썸네일 이미지에 active 클래스 넣고 빼기
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+
+    // 큰이미지 src 속성 변경하기
+    let imageSrc = $(this).attr('src');
+    $("#largeImg>img").attr({"src":imageSrc}).hide().fadeIn();
   });
 
-
-  //방법2.................
-  /* $(".thumbs a").click(function(){
-    let num=$(this).index();
-    $("#largeImg>img").attr({"src":"image/bg" + num +".jpg"});
-    return false;
-  }); */
   
-  //방법1.................
-  /* $(".thumbs a").eq(0).click(function(){
+  //기본방법
+  /* $(".thumbs img").eq(0).click(function(){
     $("#largeImg>img").attr({"src":"image/bg0.jpg"});
     return false;
   });
-  $(".thumbs a").eq(1).click(function(){
+  $(".thumbs img").eq(1).click(function(){
     $("#largeImg>img").attr({"src":"image/bg1.jpg"});
     return false;
   });
-  $(".thumbs a").eq(2).click(function(){
+  $(".thumbs img").eq(2).click(function(){
     $("#largeImg>img").attr({"src":"image/bg2.jpg"});
     return false;
   });
-  $(".thumbs a").eq(3).click(function(){
+  $(".thumbs img").eq(3).click(function(){
     $("#largeImg>img").attr({"src":"image/bg3.jpg"});
     return false;
-  }); */
+  });  */
 
 });

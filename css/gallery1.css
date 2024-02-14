@@ -25,10 +25,9 @@ body {
 	height: inherit;
 	object-fit: cover;
 }
-.thumbs a {margin-right: 5px;}
 .thumbs img {
 	width: 80px;
 	height: 70px;
 	opacity: 0.6;
 }
-.thumbs img:hover {opacity: 1;}
+.thumbs img.active {opacity: 1;}
