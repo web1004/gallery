@@ -24,18 +24,18 @@ $(document).ready(function(){
   //이전버튼
   $(".left_btn").click(function(){
     gidx--;
-    if(gidx<0){  
-      gidx=9; 
-		}
+    if(gidx<0){
+      gidx = 9;
+    }
     galleryImg(gidx);
   });
 
   //다음버튼
-  $(".right_btn").click(function(){   
+  $(".right_btn").click(function(){
     gidx++;
-    if(gidx>9){  
-      gidx=0; 
-		}
+    if(gidx>9){
+      gidx = 0;
+    }
     galleryImg(gidx);
   });
 

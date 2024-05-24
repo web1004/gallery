@@ -5,15 +5,14 @@ $(document).ready(function(){
 	let simg_w=$("#largeImg img").width();
 
   $(".thumbs a").click(function(){
-
     sidx=$(this).index();
     smove=-(simg_w*sidx);
 
     $("#gallery #largeImg").animate({"left":smove});
     $(".thumbs a").eq(soldidx).removeClass("on");
 		$(".thumbs a").eq(sidx).addClass("on"); 
-    soldidx = sidx;   
-    return false;
+    soldidx = sidx; 
+    return false
   });
 
 });

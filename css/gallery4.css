@@ -1,5 +1,5 @@
-@import url(common.css);
-
+@import url(reset.css);
+@import url(font.css);
 #gallery{ 
 	width:1000px;
 	height:753px;

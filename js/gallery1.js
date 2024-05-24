@@ -10,23 +10,4 @@ $(document).ready(function(){
     $("#largeImg>img").attr({"src":imageSrc}).hide().fadeIn();
   });
 
-  
-  //기본방법
-  /* $(".thumbs img").eq(0).click(function(){
-    $("#largeImg>img").attr({"src":"image/bg0.jpg"});
-    return false;
-  });
-  $(".thumbs img").eq(1).click(function(){
-    $("#largeImg>img").attr({"src":"image/bg1.jpg"});
-    return false;
-  });
-  $(".thumbs img").eq(2).click(function(){
-    $("#largeImg>img").attr({"src":"image/bg2.jpg"});
-    return false;
-  });
-  $(".thumbs img").eq(3).click(function(){
-    $("#largeImg>img").attr({"src":"image/bg3.jpg"});
-    return false;
-  });  */
-
 });
