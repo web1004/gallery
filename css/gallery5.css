@@ -37,7 +37,7 @@ body {
   height: 200px;
 
 }
-.lightbox-overlay {
+.lightbox-overlay {  /* 모달창(Full Screen) */
   position: fixed;
   background-color: #000;
   width: 100%;
@@ -49,13 +49,13 @@ body {
   visibility: hidden;
   transition: 0.35s;
 }
-.lightbox-overlay span {
+.lightbox-overlay span {  /* 이미지설명텍스트 */
   color: #fff;
   display: block;
   text-align: center;
   padding: 20px;
 }
-.lightbox-overlay.active {
+.lightbox-overlay.active { /* JQuery 에서 active클래스를 생성 or 삭제 */
   opacity: 1;
   visibility: visible;
 }

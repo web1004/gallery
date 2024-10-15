@@ -1,18 +1,17 @@
 $(document).ready(function(){
-
-  let soldidx=0;
-	let sidx=0;
-	let simg_w=$("#largeImg img").width();
+  
+  let slideOldImg = 0;
+  let sldieNewImg = 0;
+  let slideWidth = $("#largeImg img").width();
 
   $(".thumbs a").click(function(){
-    sidx=$(this).index();
-    smove=-(simg_w*sidx);
+    sldieNewImg = $(this).index();
+    slideMove = -(slideWidth*sldieNewImg);  //1200*0, 1200*1, 1200*2 .....
 
-    $("#gallery #largeImg").animate({"left":smove});
-    $(".thumbs a").eq(soldidx).removeClass("on");
-		$(".thumbs a").eq(sidx).addClass("on"); 
-    soldidx = sidx; 
-    return false
+    $("#gallery #largeImg").animate({left : slideMove});
+    $(".thumbs a").eq(slideOldImg).removeClass("active");
+		$(".thumbs a").eq(sldieNewImg).addClass("active");
+    slideOldImg = sldieNewImg;    
   });
 
 });
